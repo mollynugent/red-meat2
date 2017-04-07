@@ -1,0 +1,361 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-size: 16px;
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-family: 'Arsenal', sans-serif;
+}
+
+.heading {
+    height: 543px;
+    margin-bottom: 12px;
+}
+
+#background-img {
+    background-image: url(images/red-meat3.jpg);
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 5.5em;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+h4 {
+    font-size: 2.7em;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.2em;
+    padding-top: 200px;
+    text-shadow: 1px 1px #000;
+}
+
+h1, h4 {
+    margin-bottom: 10px;
+}
+
+h2, h3, figcaption {
+    /*font-family: "Geneva", sans-serif;*/
+    font-family: 'Arsenal', sans-serif;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: .8em;
+    color: gray;
+    line-height: 1.5em;
+}
+
+.byline {
+    /*text-transform: uppercase;*/
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: .75em;
+    color: gray;
+    margin: 5px;
+    line-height: 1.2em;
+}
+
+.intro-container {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.text-container {
+    line-height: 1.3em;
+    margin: 10%;
+    margin-top: 0;
+}
+
+.calculator {
+    margin-top: 5%;
+    border-size: 2px;
+    border-style: solid;
+    border-color: 2px black;
+    background-color: #ECBDC2;
+    padding: 5%;
+}
+
+#background {
+    background-image: url(images/calculator-photo.jpg);
+}
+
+.steaks {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    /*display: inline-block;*/
+}
+
+#s1 {
+    width: 50px;
+    padding: 8px;
+}
+
+#s2 {
+    width: 50px;
+    padding: 8px;
+}
+
+#s3 {
+    width: 50px;
+    padding: 8px;
+}
+
+p {
+    padding: 10px;
+}
+
+.types {
+    margin: 0 auto;
+    width: 15%;
+}
+
+.substitutions {
+    margin: 0 auto;
+    width: 15%
+}
+
+input {
+    width: 98%;
+    height: 20px;
+    /*border: 3px solid #555;*/
+}
+
+#answer {
+    font-family: 'Arsenal', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+#go {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    opacity: 0.76;
+    margin: 0 auto;
+}
+
+.return-meat {
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*unvisitied and visited link*/
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    padding-bottom: .05em;
+}
+
+
+/*emphasizes a few words*/
+
+.highlight {
+    background: yellow;
+}
+
+blockquote {
+    width: 65%;
+    text-align: center;
+    padding: 0px;
+    margin: 30px auto 30px auto;
+    font-size: 1.1em;
+    line-height: 1.25em;
+    position: relative;
+}
+
+blockquote p::before, blockquote p::after {
+    font-size: 3em;
+    color: #BE5259;
+    font-family: georgia;
+    position: absolute;
+}
+
+blockquote p::before {
+    content: '\201c';
+    display: inline-block;
+    padding-right: 10px;
+    left: -3px;
+}
+
+blockquote p::after {
+    content: '\201d';
+    display: inline-block;
+    padding-right: -50px;
+    bottom: 75px;
+    right: 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    blockquote p::after {
+        right: 15%;
+    }
+    .heading {
+        height: 523px;
+        margin-bottom: 50px;
+    }
+    #background-img {
+        background-image: url(images/red-meat4.jpg);
+        width: 100%;
+    }
+    h1 {
+        font-size: 5.5em;
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px #000;
+    }
+    h4 {
+        font-size: 2.7em;
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+        line-height: 1.2em;
+        padding-top: 200px;
+        text-shadow: 1px 1px #000;
+    }
+    h1, h4 {
+        margin-bottom: 10px;
+    }
+    .text-container {
+        line-height: 1.3em;
+        margin: 200px;
+        margin-top: 0;
+    }
+    .calculator {
+        margin-left: 300px;
+        margin-right: 300px;
+        border-size: 2px;
+        border-style: solid;
+        border-color: 2px black;
+        background-color: #ECBDC2;
+        padding: 5%;
+    }
+    .steaks {
+        padding-left: 225px;
+    }
+    #s1 {
+        width: 50px;
+        padding: 8px;
+    }
+    #s2 {
+        width: 50px;
+        padding: 8px;
+    }
+    #s3 {
+        width: 50px;
+        padding: 8px;
+    }
+    #what-is {
+        /*margin-left: 100px;*/
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #good {
+        /*margin-left: 100px;*/
+        text-align: center;
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.2em;
+        color: gray;
+        line-height: 1.5em;
+    }
+}
+
+@media(min-width: 768px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    blockquote p::after {
+        right: 0;
+    }
+}
